@@ -36,7 +36,7 @@ Oled.setPageMode();  // each (little) number printing is within one page
 Oled.setHorizontalMode(); // (little) text can flow down whole display.
 
 A "page" (0-7) is a horizontal slice of display, 8 pixels deep.  8 pages total.
-"Pattern is an 8bit pixel pattern to set which pixel lines to paint across a page.
+"Pattern" is an 8bit pixel pattern to set which pixel lines to paint across a page.
 X and Y are column / row cursor positions. In 8-pixel jumps! So X across is 0 - 15, Y down 0 - 7.
 
 Bignumbers can use X 0-12, Y 0-4, or they fall off the display.
