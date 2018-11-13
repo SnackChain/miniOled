@@ -1,8 +1,8 @@
 # miniOled
 
-A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled display.  Derived out of __Daniel Turton's OzOled__ project 2014/2015. 
+A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled display.  Derived out of __Daniel Turton's OzOled__ project 2014/2015. <img align="right" src="STM32F030-Dev-Brd.jpg">
 
-The original target for this library was STM32F030F4P6 using Arduino IDE. 
+The original target for this library was the $3 STM32F030F4P6 board, using Arduino IDE. 
 This target has small flash memory, and the established oled libraries are too large to compile into flash.
 
 <img align="right" src="P1070121.JPG">The Arduino IDE configuration for this board also has an allocation of I2C pins (PA9/PA10) that conflicts
@@ -41,7 +41,7 @@ X and Y are column / row cursor positions. In 8-pixel jumps! So X across is 0 - 
 Bignumbers can use X 0-12, Y 0-4, else they fall off the display.
 Multiple write without re-setting cursors will move across as expected.
 ```
-<img align="right" src="STM32F030-Dev-Brd.jpg">There should be no reason that miniOled would not readily work in other scenarios. 
+There should be no reason that miniOled would not readily work in other scenarios. 
 
 miniOled code is here:
  - https://github.com/BLavery/STM32F030F4P6-Arduino/tree/master/Arduino/libraries/miniOled
