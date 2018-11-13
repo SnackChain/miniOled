@@ -4,7 +4,7 @@ A lean library for Arduino STM32, with SSD1306 0.96" I2C Oled display.  Derived 
 
 The original target for this library was STM32F030F4P6 using Arduino IDE. 
 
-This target has small flash memory, and regular oled library code is too large to compile into flash.
+This target has small flash memory, and the established oled libraries are too large to compile into flash.
 
 The Arduino IDE configuration for this board also has an allocation of I2C pins (PA9/PA10) that conflicts
 with how the cheap boards are constructed. They designate PA9 and PA10 as UART TX/RX.
