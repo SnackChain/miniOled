@@ -1,6 +1,6 @@
 # miniOled
 
-A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled display.  Derived out of Daniel Turton's OzOled project 2014/2015. 
+A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled display.  Derived out of __Daniel Turton's OzOled__ project 2014/2015. 
 
 The original target for this library was STM32F030F4P6 using Arduino IDE. 
 This target has small flash memory, and the established oled libraries are too large to compile into flash.
