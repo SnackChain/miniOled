@@ -26,7 +26,7 @@ Oled.drawLine(page, pattern);
 Oled.printNumber(long_number, X, X);
 Oled.printNumber(float_num, precision, X, Y);
 Oled.drawBitmap(*imagebitmap, X, Y, width, height);
-Oled.printBigNumber("2", X, Y);  // "0"-"9" or ":"   BigNumbers are 24x32
+Oled.printBigNumber("2", X, Y);  // Only "0"-"9" or ":"   BigNumbers are 24x32
 
 Oled.setCursorXY(Column, Row);
 Oled.clearDisplay();
