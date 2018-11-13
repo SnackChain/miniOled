@@ -42,7 +42,7 @@ X and Y are column / row cursor positions. In 8-pixel jumps! So X across is 0 - 
 Bignumbers can use X 0-12, Y 0-4, or they fall off the display.
 Multiple write without re-setting cursors will move across as expected.
 ```
-There should be no reason that miniOled should not readily work in other scenarios. 
+There should be no reason that miniOled would not readily work in other scenarios. 
 
 miniOled code is here:
  - https://github.com/BLavery/STM32F030F4P6-Arduino/tree/master/Arduino/libraries/miniOled
