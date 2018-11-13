@@ -11,7 +11,7 @@ with how the cheap boards are constructed. They designate PA9 and PA10 as UART T
 miniOled has __minimalist code__ (just enough to be useful). It also uses __software I2C__ library "SoftWire" to allow 
 choice of I2C pins, and smaller I2C driver code space.
 
-Functions:
+Useage:
 ```
 #include "miniOled.h"   // that's it. We have an "Oled" object
 
