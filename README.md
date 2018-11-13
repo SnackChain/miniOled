@@ -5,7 +5,7 @@ A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled d
 The original target for this library was STM32F030F4P6 using Arduino IDE. 
 This target has small flash memory, and the established oled libraries are too large to compile into flash.
 
-The Arduino IDE configuration for this board also has an allocation of I2C pins (PA9/PA10) that conflicts
+<img align="right" src="P1070121.JPG">The Arduino IDE configuration for this board also has an allocation of I2C pins (PA9/PA10) that conflicts
 with how the cheap boards are constructed. They designate PA9 and PA10 as UART TX/RX.
 
 miniOled has __minimalist code__ (just enough to be useful). It also uses __software I2C__ library "SoftWire" to allow 
