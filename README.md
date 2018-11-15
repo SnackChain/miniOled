@@ -10,6 +10,8 @@ It also __optionally uses software I2C__ library "SoftWire" to allow
 choice of I2C pins. The native Arduino IDE Wire configuration for this board has an allocation of I2C pins (PA10/PA9) that conflicts with how the cheap boards are constructed. These (The "STM32F030F4P6 Demo" board) designate PA9 and PA10 as UART TX/RX, 
 and connect these to the uart header.
 
+In this code, Oled updates are direct and partial, not usually a total canvas write. But it is still slow, not very "snappy." The native I2C method is not much faster than the software method. 
+
 Useage:
 ```
 #include "miniOled.h"   // that's it. We have an "Oled" object
