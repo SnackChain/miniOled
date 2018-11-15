@@ -14,7 +14,8 @@ Useage:
 ```
 #include "miniOled.h"   // that's it. We have an "Oled" object
 
-Oled.init(sda, scl); // in setup(). sda and scl will default if omitted
+Oled.init(sda, scl); // in setup(). sda and scl will default (PA6/PA5) if omitted
+(The sda/scl parameters will be ignored in case of not using SoftWire. PA10/PA9 will be used.)
 
 Oled.wideFont = true;  // Tiny chars get double-width
 Oled.chrSpace = 1;   // inter-char space. Use 1, 2 or 3.
