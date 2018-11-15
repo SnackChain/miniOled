@@ -56,5 +56,6 @@ You will also need these for software I2C:
  In file miniOled.cpp there is a line 
    __#define SOFTWIRE__
  Leave this defined to use software I2C. Undefine it to use regular Arduino (STM32) "Wire.h".
+ Using software I2C saves about 1.5k flash.
 
 
