@@ -3,13 +3,12 @@
 A lean library for Arduino STM32, to use the ubiquitous SSD1306 0.96" I2C Oled display.  Derived out of __Daniel Turton's OzOled__ project 2014/2015.
 
  <img align="right" src="P1070121.JPG">The original target for this library was the $3 STM32F030F4P6 board, using Arduino IDE. 
-This target has small flash memory, and the established oled libraries are too large to compile into flash.
+This target has small flash memory, and the established oled libraries are too large to compile into flash. 
+miniOled has __minimalist code__ (just enough to be useful). 
 
-The Arduino IDE configuration for this board also has an allocation of I2C pins (PA9/PA10) that conflicts
-with how the cheap boards are constructed. They designate PA9 and PA10 as UART TX/RX.
-
-miniOled has __minimalist code__ (just enough to be useful). It also uses __software I2C__ library "SoftWire" to allow 
-choice of I2C pins, and smaller I2C driver code space.
+It also __optionally uses software I2C__ library "SoftWire" to allow 
+choice of I2C pins. The native Arduino IDE Wire configuration for this board has an allocation of I2C pins (PA9/PA10) that conflicts with how the cheap boards are constructed. These (The "STM32F030F4P6 Demo" board) designate PA9 and PA10 as UART TX/RX, 
+and connect these to the uart header.
 
 Useage:
 ```
@@ -47,8 +46,12 @@ readily work in other scenarios.
 miniOled code is here:
  - https://github.com/BLavery/STM32F030F4P6-Arduino/tree/master/Arduino/libraries/miniOled
 
-You will also need these:
+You will also need these for software I2C:
  - __SoftWire__ 2.0 from here: https://www.arduinolibraries.info/libraries/soft-wire
  - __AsyncDelay__ (used by SoftWire) from here: https://github.com/stevemarple/AsyncDelay
+ 
+ In file miniOled.cpp there is a line 
+   __#define SOFTWIRE__
+ Leave this defined to use software I2C. undefine it to use regular Arduino (STM32) "Wire.h".
 
 
